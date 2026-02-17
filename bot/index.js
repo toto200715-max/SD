@@ -29,6 +29,7 @@ process.on('unhandledRejection', error => {
     console.error('Unhandled promise rejection:', error);
 });
 
-client.login(config.token);
+client.login(process.env.TPKEN);
 
 module.exports = client;
+
